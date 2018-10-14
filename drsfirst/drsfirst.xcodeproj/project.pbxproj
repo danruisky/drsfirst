@@ -14,6 +14,7 @@
 		04F748BF2173A08D005747B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F748BD2173A08D005747B2 /* LaunchScreen.storyboard */; };
 		04F748CA2173A08E005747B2 /* drsfirstTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F748C92173A08E005747B2 /* drsfirstTests.swift */; };
 		04F748D52173A08E005747B2 /* drsfirstUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F748D42173A08E005747B2 /* drsfirstUITests.swift */; };
+		7213308F33D669F8B3E301D1 /* Pods_drsfirst.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07E2D01DA4BBEBBBA7C8CAD0 /* Pods_drsfirst.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,9 @@
 		04F748D02173A08E005747B2 /* drsfirstUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = drsfirstUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04F748D42173A08E005747B2 /* drsfirstUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = drsfirstUITests.swift; sourceTree = "<group>"; };
 		04F748D62173A08E005747B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07E2D01DA4BBEBBBA7C8CAD0 /* Pods_drsfirst.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_drsfirst.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		15FCAAA60B0E9B68E09F0379 /* Pods-drsfirst.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-drsfirst.release.xcconfig"; path = "Pods/Target Support Files/Pods-drsfirst/Pods-drsfirst.release.xcconfig"; sourceTree = "<group>"; };
+		B00D7A6A3412A23B08576438 /* Pods-drsfirst.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-drsfirst.debug.xcconfig"; path = "Pods/Target Support Files/Pods-drsfirst/Pods-drsfirst.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7213308F33D669F8B3E301D1 /* Pods_drsfirst.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +86,8 @@
 				04F748C82173A08E005747B2 /* drsfirstTests */,
 				04F748D32173A08E005747B2 /* drsfirstUITests */,
 				04F748B22173A08B005747B2 /* Products */,
+				2302241F76027E28D66FEC9F /* Pods */,
+				666021B4ECB723D2B49781A6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +132,23 @@
 			path = drsfirstUITests;
 			sourceTree = "<group>";
 		};
+		2302241F76027E28D66FEC9F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B00D7A6A3412A23B08576438 /* Pods-drsfirst.debug.xcconfig */,
+				15FCAAA60B0E9B68E09F0379 /* Pods-drsfirst.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		666021B4ECB723D2B49781A6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				07E2D01DA4BBEBBBA7C8CAD0 /* Pods_drsfirst.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +156,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04F748D92173A08E005747B2 /* Build configuration list for PBXNativeTarget "drsfirst" */;
 			buildPhases = (
+				5B3BC1AB667D18E13DB2130B /* [CP] Check Pods Manifest.lock */,
 				04F748AD2173A08B005747B2 /* Sources */,
 				04F748AE2173A08B005747B2 /* Frameworks */,
 				04F748AF2173A08B005747B2 /* Resources */,
+				D5C59075F5B501F7A74D248A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -250,6 +276,55 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5B3BC1AB667D18E13DB2130B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-drsfirst-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5C59075F5B501F7A74D248A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-drsfirst/Pods-drsfirst-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SQLite.swift/SQLite.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SQLite.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-drsfirst/Pods-drsfirst-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		04F748AD2173A08B005747B2 /* Sources */ = {
@@ -428,10 +503,13 @@
 		};
 		04F748DA2173A08E005747B2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B00D7A6A3412A23B08576438 /* Pods-drsfirst.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = drsfirst/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -439,16 +517,19 @@
 				PRODUCT_BUNDLE_IDENTIFIER = uiso.com.drsfirst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		04F748DB2173A08E005747B2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15FCAAA60B0E9B68E09F0379 /* Pods-drsfirst.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = drsfirst/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -456,7 +537,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = uiso.com.drsfirst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Alamofire
+import SQLite
 
 class ViewController: UIViewController {
 

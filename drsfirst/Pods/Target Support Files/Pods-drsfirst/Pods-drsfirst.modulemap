@@ -1,0 +1,6 @@
+framework module Pods_drsfirst {
+  umbrella header "Pods-drsfirst-umbrella.h"
+
+  export *
+  module * { export * }
+}
