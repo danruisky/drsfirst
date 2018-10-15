@@ -104,6 +104,7 @@
 		04F748B32173A08B005747B2 /* drsfirst */ = {
 			isa = PBXGroup;
 			children = (
+				04F748E221745C87005747B2 /* classes */,
 				04F748B42173A08B005747B2 /* AppDelegate.swift */,
 				04F748B62173A08B005747B2 /* ViewController.swift */,
 				04F748B82173A08B005747B2 /* Main.storyboard */,
@@ -130,6 +131,29 @@
 				04F748D62173A08E005747B2 /* Info.plist */,
 			);
 			path = drsfirstUITests;
+			sourceTree = "<group>";
+		};
+		04F748E221745C87005747B2 /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				04F748E321745C87005747B2 /* appcls */,
+				04F748E421745C87005747B2 /* basecls */,
+			);
+			path = classes;
+			sourceTree = SOURCE_ROOT;
+		};
+		04F748E321745C87005747B2 /* appcls */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = appcls;
+			sourceTree = "<group>";
+		};
+		04F748E421745C87005747B2 /* basecls */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = basecls;
 			sourceTree = "<group>";
 		};
 		2302241F76027E28D66FEC9F /* Pods */ = {
@@ -283,15 +307,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-drsfirst-checkManifestLockResult.txt",
 			);
@@ -305,16 +325,12 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-drsfirst/Pods-drsfirst-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/SQLite.swift/SQLite.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SQLite.framework",
