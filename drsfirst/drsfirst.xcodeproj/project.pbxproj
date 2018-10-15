@@ -104,7 +104,7 @@
 		04F748B32173A08B005747B2 /* drsfirst */ = {
 			isa = PBXGroup;
 			children = (
-				04F748E221745C87005747B2 /* classes */,
+				04FFD87621746EA000F7812C /* classes */,
 				04F748B42173A08B005747B2 /* AppDelegate.swift */,
 				04F748B62173A08B005747B2 /* ViewController.swift */,
 				04F748B82173A08B005747B2 /* Main.storyboard */,
@@ -133,23 +133,23 @@
 			path = drsfirstUITests;
 			sourceTree = "<group>";
 		};
-		04F748E221745C87005747B2 /* classes */ = {
+		04FFD87621746EA000F7812C /* classes */ = {
 			isa = PBXGroup;
 			children = (
-				04F748E321745C87005747B2 /* appcls */,
-				04F748E421745C87005747B2 /* basecls */,
+				04FFD87721746EA000F7812C /* appcls */,
+				04FFD87821746EA000F7812C /* basecls */,
 			);
 			path = classes;
-			sourceTree = SOURCE_ROOT;
+			sourceTree = "<group>";
 		};
-		04F748E321745C87005747B2 /* appcls */ = {
+		04FFD87721746EA000F7812C /* appcls */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = appcls;
 			sourceTree = "<group>";
 		};
-		04F748E421745C87005747B2 /* basecls */ = {
+		04FFD87821746EA000F7812C /* basecls */ = {
 			isa = PBXGroup;
 			children = (
 			);
